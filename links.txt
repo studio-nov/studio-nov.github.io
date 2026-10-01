@@ -7,5 +7,5 @@
 #  - Las líneas que empiezan con # se ignoran.
 #  - "general" = formulario sin prellenado, se ofrece si un QR falla.
 # ============================================================
-general | Formulario sin prellenado | https://REEMPLAZAR-CON-LINK-GENERAL
+general | Formulario sin prellenado | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22General%20-%20Floresta%22&r881a57b1f42045729428393531c253f0=%22Corredor%20o%20zona%20com%C3%BAn%22
 t01 | QR de prueba | https://REEMPLAZAR-CON-UN-LINK-PRELLENADO
