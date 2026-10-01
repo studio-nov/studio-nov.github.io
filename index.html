@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Nova · Reporte de novedades</title>
+<style>
+  :root { --rosa:#ED767F; --oscuro:#454A3D; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family:-apple-system, "Segoe UI", Roboto, Arial, sans-serif; background:#fff; color:var(--oscuro); padding:24px; }
+  .caja { max-width:360px; text-align:center; }
+  .marca { font-size:34px; font-weight:600; color:var(--rosa); letter-spacing:.5px; margin-bottom:18px; }
+  .spinner { width:36px; height:36px; margin:0 auto 16px; border:4px solid #f6d3d6; border-top-color:var(--rosa);
+             border-radius:50%; animation:g 0.8s linear infinite; }
+  @keyframes g { to { transform:rotate(360deg); } }
+  p { margin:8px 0; line-height:1.45; }
+  .codigo { font-size:13px; color:#888; margin-top:14px; }
+  a.boton { display:inline-block; margin-top:16px; padding:12px 20px; background:var(--rosa); color:#fff;
+            text-decoration:none; border-radius:10px; font-weight:600; }
+  .oculto { display:none !important; }
+</style>
+</head>
+<body>
+<div class="caja">
+  <div class="marca">Nova</div>
+  <div id="cargando">
+    <div class="spinner"></div>
+    <p>Abriendo el formulario de reporte…</p>
+  </div>
+  <div id="error" class="oculto">
+    <p><strong id="msg">Este QR no está configurado.</strong></p>
+    <p>Por favor avisa a Operaciones.</p>
+    <a id="general" class="boton oculto" href="#">Reportar de todas formas</a>
+  </div>
+  <div id="manual" class="oculto">
+    <a id="link" class="boton" href="#">Toca aquí si no abre</a>
+  </div>
+  <p class="codigo" id="cod"></p>
+  <noscript><p>Activa JavaScript en tu navegador para abrir el formulario.</p></noscript>
+</div>
+<script>
+(function () {
+  // Código del QR = primera parte de la dirección: /f07/ -> "f07"
+  var partes = location.pathname.split("/").filter(function (x) { return x; });
+  var codigo = (partes[0] || "").toLowerCase();
+  document.getElementById("cod").textContent = codigo ? "Código: " + codigo.toUpperCase() : "";
+
+  function mostrarError(texto, linkGeneral) {
+    document.getElementById("cargando").className = "oculto";
+    document.getElementById("msg").textContent = texto;
+    document.getElementById("error").className = "";
+    if (linkGeneral) {
+      var g = document.getElementById("general");
+      g.href = linkGeneral; g.className = "boton";
+    }
+  }
+
+  function leerLista(txt) {
+    var mapa = {};
+    txt.split(/\r?\n/).forEach(function (linea) {
+      linea = linea.trim();
+      if (!linea || linea.charAt(0) === "#") return;
+      var c = linea.split("|");
+      if (c.length < 2) return;
+      var cod = c[0].trim().toLowerCase();
+      var url = c[c.length - 1].trim();
+      if (cod && /^https:\/\/\S+$/i.test(url)) mapa[cod] = url;
+    });
+    return mapa;
+  }
+
+  function ir(url) {
+    var a = document.getElementById("link");
+    a.href = url;
+    setTimeout(function () { document.getElementById("manual").className = ""; }, 2500);
+    location.replace(url);
+  }
+
+  function cargar(intento) {
+    // "?t=" evita que el teléfono o GitHub entreguen una versión vieja de la lista
+    fetch("/links.txt?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (txt) {
+        var mapa = leerLista(txt);
+        if (mapa[codigo]) ir(mapa[codigo]);
+        else mostrarError("Este QR (" + (codigo.toUpperCase() || "sin código") + ") no está configurado.", mapa["general"]);
+      })
+      .catch(function () {
+        if (intento < 2) setTimeout(function () { cargar(intento + 1); }, 1500);
+        else mostrarError("No se pudo abrir el formulario. Revisa tu conexión e intenta de nuevo.");
+      });
+  }
+  cargar(0);
+})();
+</script>
+</body>
+</html>

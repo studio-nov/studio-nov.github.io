@@ -1,0 +1,11 @@
+# ============================================================
+#  QR NOVA STUDIOS — a dónde lleva cada código
+#  Formato:  codigo | nombre | link
+#  - codigo: f01, f02… (Floresta) / s01, s02… (San Juan). Minúscula.
+#  - nombre: solo para ubicarte, no afecta nada.
+#  - link: el link prellenado de Forms, completo, empezando por https://
+#  - Las líneas que empiezan con # se ignoran.
+#  - "general" = formulario sin prellenado, se ofrece si un QR falla.
+# ============================================================
+general | Formulario sin prellenado | https://REEMPLAZAR-CON-LINK-GENERAL
+t01 | QR de prueba | https://REEMPLAZAR-CON-UN-LINK-PRELLENADO
