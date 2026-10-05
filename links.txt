@@ -1,13 +1,9 @@
 # ============================================================
-#  QR NOVA STUDIOS — a dónde lleva cada código
+#  QR NOVA STUDIOS 
 #  Formato:  codigo | nombre | link
-#  - codigo: f01… (Floresta) / s01… (San Juan). Minúscula.
-#  - nombre: solo para ubicarte, no afecta nada.
+#  - codigo: f01… (Floresta) / s01… (San Juan).
 #  - link: el link prellenado de Forms, completo, empezando por https://
-#  - Las líneas que empiezan con # se ignoran.
-#  - "general" = formulario sin prellenado, se ofrece si un QR falla.
 # ============================================================
-general | Formulario sin prellenado | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u
 
 # ---------- FLORESTA ----------#
 f01 | Floresta Room 1 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22Floresta%20Room%201%22&r881a57b1f42045729428393531c253f0=%22Room%22
