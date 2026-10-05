@@ -8,9 +8,8 @@
 #  - "general" = formulario sin prellenado, se ofrece si un QR falla.
 # ============================================================
 general | Formulario sin prellenado | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u
-t01 | QR de prueba (General - Floresta) | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22General%20-%20Floresta%22&r881a57b1f42045729428393531c253f0=%22Corredor%20o%20zona%20com%C3%BAn%22
 
-# ---------- FLORESTA ----------
+# ---------- FLORESTA ----------#
 f01 | Floresta Room 1 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22Floresta%20Room%201%22&r881a57b1f42045729428393531c253f0=%22Room%22
 f02 | Floresta Room 2 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22Floresta%20Room%202%22&r881a57b1f42045729428393531c253f0=%22Room%22
 f03 | Floresta Room 3 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22Floresta%20Room%203%22&r881a57b1f42045729428393531c253f0=%22Room%22
@@ -44,7 +43,7 @@ f30 | Baño 2 piso 3 - Floresta | https://forms.cloud.microsoft/Pages/ResponsePa
 f31 | Baño 1 piso 4 - Floresta | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22Ba%C3%B1o%201%20piso%204%20-%20Floresta%22&r881a57b1f42045729428393531c253f0=%22Ba%C3%B1o%22
 f32 | General - Floresta | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22Floresta%22&rab218de119484db1bd07fa478149acb6=%22General%20-%20Floresta%22&r881a57b1f42045729428393531c253f0=%22Corredor%20o%20zona%20com%C3%BAn%22
 
-# ---------- SAN JUAN ----------
+# ---------- SAN JUAN ----------#
 s01 | San Juan Room 1 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22San%20Juan%22&rab218de119484db1bd07fa478149acb6=%22San%20Juan%20Room%201%22&r881a57b1f42045729428393531c253f0=%22Room%22
 s02 | San Juan Room 2 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22San%20Juan%22&rab218de119484db1bd07fa478149acb6=%22San%20Juan%20Room%202%22&r881a57b1f42045729428393531c253f0=%22Room%22
 s03 | San Juan Room 3 | https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=EUFvZ39dsEaBwfjRsL7gDgeLXm9wr6NLlpoUcNuXyUNUODk3UzFHNjBCNjBXQklONk1WV01GTjZLWi4u&ra54a979951424f1ca40c349155491dc7=%22San%20Juan%22&rab218de119484db1bd07fa478149acb6=%22San%20Juan%20Room%203%22&r881a57b1f42045729428393531c253f0=%22Room%22
